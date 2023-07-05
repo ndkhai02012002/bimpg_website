@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <script src="../js/admin.register.js" defer></script>
+    <script type="text/javascript" src="../js/admin.logout.js" defer></script>
+    <title>Đăng ký</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Admin Page</a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/admin/all-news">Quản lí tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/manager-client">Thông tin khách hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/register">Tạo tài khoản</a>
+                    </li>
+
+                </ul>
+                <div class="mx-4">
+                    <a class="nav-divnk" href="#" onclick="Logout()">Đăng xuất</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 my-5 bg-light p-5 rounded-5">
+                <form id="register-form">
+                    <h3 class="text-center text-primary">Đăng kí</h3>
+                    <div class="form-group my-2">
+                        <label for="username" class="text-primary">Tên đăng nhập:</label><br>
+                        <input type="text" name="username" id="username" class="form-control">
+                        <span id="register-check-user-name"
+                            style="color: red; font-size: 14px; margin-left: 10px; display: none;"></span>
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="password" class="text-primary">Mật khẩu:</label><br>
+                        <input type="password" name="password" id="password" class="form-control">
+                        <span id="register-check-password"
+                            style="color: red; font-size: 14px; margin-left: 10px; display: none;"></span>
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="password-confirm" class="text-primary">Xác thực mật khẩu:</label><br>
+                        <input type="password" name="password-confirm" id="password-confirm" class="form-control">
+                        <span id="register-check-password-confirm"
+                            style="color: red; font-size: 14px; margin-left: 10px; display: none;"></span>
+                    </div>
+                </form>
+
+
+
+                <button class="btn btn-primary my-3" onclick="Register()">Đăng kí</button>
+                <div class="d-flex justify-content-center mt-1"><span id="check-register"
+                        style="color: #8ced8c; font-size: 16px; margin-left: 10px; display: none;"></span></div>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</body>
+
+</html>

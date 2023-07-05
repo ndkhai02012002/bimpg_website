@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <script src="../js/admin.login.js" defer></script>
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-dark" href="#">ADMIN BIM-PG</a>
+        </div>
+    </nav>
+
+    <div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 my-5 bg-light p-5 rounded-5">
+                <form id="login-form">
+                    <h3 class="text-center text-primary">Đăng nhập</h3>
+                    <div class="form-group my-2">
+                        <label for="username" class="text-primary">Tên đăng nhập:</label><br>
+                        <input type="text" name="username" id="username" class="form-control">
+                        <span id="login-check-user-name"
+                            style="color: red; font-size: 14px; margin-left: 10px; display: none;"></span>
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="password" class="text-primary">Mật khẩu:</label><br>
+                        <input type="password" name="password" id="password" class="form-control">
+                        <span id="login-check-password"
+                            style="color: red; font-size: 14px; margin-left: 10px; display: none;"></span>
+                    </div>
+
+                </form>
+                <button class="btn btn-primary my-3" onclick="Login()">Đăng nhập</button>
+                <div class="d-flex justify-content-center mt-1"><span id="check-login"
+                        style="color: #8ced8c; font-size: 16px; margin-left: 10px; display: none;"></span></div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</body>
+
+</html>
